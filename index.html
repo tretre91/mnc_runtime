@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css?version=2">
+    <title>Wasm !</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Wasm !</h1>
+        <label for="source_input">fichier source</label>
+        <input type="file" id="source_input" accept="application/wasm">
+    </div>
+    <div id="console">
+        <ul id="outputs"></ul>
+    </div>
+
+    <script type="module" src="./build/runtime.mjs"></script>
+</body>
+</html>
